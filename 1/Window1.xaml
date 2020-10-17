@@ -1,0 +1,69 @@
+﻿<Window x:Class="WpfApplication1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="New Student" Height="354.142" Width="338.166">
+    <StackPanel>
+        <TextBlock FontSize="18.667">New Student</TextBlock>
+        <Border BorderThickness="0 0 0 1" BorderBrush="Black"/>
+        <Grid ShowGridLines="False" Height="214" Margin="3">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="111*"/>
+                <ColumnDefinition Width="181*"/>
+
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Margin="0,5,0,22" Grid.RowSpan="2"><Run Text="Sutdent ID"/></TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="0,5,0,22" Grid.RowSpan="2"><Run Text="First Name"/></TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="0" Margin="0,5,0,22" Grid.RowSpan="2"><Run Text="Last Name"/></TextBlock>
+            <TextBlock Grid.Row="3" Grid.Column="0" Margin="0,5,0,21" Grid.RowSpan="2"><Run Text="Birthdate"/></TextBlock>
+            <TextBlock Grid.Row="4" Grid.Column="0" Margin="0,5,0,22" Grid.RowSpan="2"><Run Text="Gender"/></TextBlock>
+            <TextBlock Grid.Row="5" Grid.Column="0" Margin="0,5,0,21" Grid.RowSpan="2"><Run Text="Address"/></TextBlock>
+            <TextBlock Grid.Row="6" Grid.Column="0" Margin="0,5,0,22" Grid.RowSpan="2"><Run Text="Gmail"/></TextBlock>
+            <TextBlock Grid.Row="7" Grid.Column="0" Margin="0,5,0,-5"><Run Text="Class"/></TextBlock>
+
+            <TextBox Grid.Row="0" Grid.Column="1"/>
+            </TextBox>
+            <TextBox Grid.Row="1" Grid.Column="1"/>
+            <TextBox Grid.Row="2" Grid.Column="1"/>
+            <TextBox Grid.Row="3" Grid.Column="1"/>
+            <CheckBox Grid.Row="4" Grid.Column="1" Margin="66,5,-66,21" Grid.RowSpan="2" Content="Nữ"/>
+            <CheckBox Grid.Row="4" Grid.Column="1" Content="Nam" Margin="0,5,0,22" Grid.RowSpan="2"/>
+            <TextBox Grid.Row="5" Grid.Column="1"/>
+            <TextBox Grid.Row="6" Grid.Column="1"/>
+            <ComboBox Grid.Row="7" Grid.Column="1">
+                <ComboBoxItem IsSelected="True" Content=""/>
+                <ComboBoxItem Content="18DTHQA1"/>
+                <ComboBoxItem Content="18DTHQA2"/>
+
+            </ComboBox>
+        </Grid>
+        <Grid ShowGridLines="False">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="70"></ColumnDefinition>
+                <ColumnDefinition Width="70"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="0" Margin="4,10,6,-53" >View Transript</Button>
+            <Button Grid.Row="0" Grid.Column="1" Margin="49,10,22,-53" Grid.ColumnSpan="2" Background="#FF1ACED6">Save</Button>
+            <Button Grid.Row="0" Grid.Column="2" Margin="70,10,-70,-53">Exit</Button>
+
+        </Grid>
+    </StackPanel>
+</Window>

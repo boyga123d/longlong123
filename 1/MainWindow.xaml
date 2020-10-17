@@ -1,0 +1,112 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Student informatin management" Height="367.948" Width="525">
+
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Menu>
+                <MenuItem Header="Student">
+                    <MenuItem Header="_Open" />
+                    <MenuItem Header="_Close"  />
+                    <MenuItem Header="_Save"  />
+                </MenuItem>
+
+                <MenuItem Header="Class">
+                    <MenuItem Header="_Open" IsCheckable="true" />
+                    <MenuItem Header="_Close" IsCheckable="true" />
+                    <MenuItem Header="_Save" IsCheckable="true" />
+                </MenuItem>
+
+                <MenuItem Header="Help">
+                    <MenuItem Header="Help me" IsCheckable="true" />
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+        <TextBlock FontSize="18.667">Student list</TextBlock>
+        <Border BorderThickness="0 0 0 1" BorderBrush="Black"/>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBox Height="20" Width="211" >Student ID , Name , Email...</TextBox>
+            <ComboBox Height="38" Width="105">
+                <ComboBoxItem IsSelected="True">None</ComboBoxItem>
+                <ComboBoxItem>18DTHQA1</ComboBoxItem>
+                <ComboBoxItem>18DTHQA2</ComboBoxItem>
+
+            </ComboBox>
+
+            <Button Content= "Search" Height="40" Width="101"></Button>
+            <Button Content="Reset" Height="40" Width="95" RenderTransformOrigin="1.105,0.457"/>
+        </StackPanel>
+        <Border BorderThickness="0 0 0 1" BorderBrush="Black"/>
+        <Grid ShowGridLines="True" Height="211">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Grid.Column="0">
+                <CheckBox IsEnabled="False"></CheckBox>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="0">
+                <CheckBox></CheckBox>
+            </Button>
+            <Button Grid.Row="2" Grid.Column="0">
+                <CheckBox></CheckBox>
+            </Button>
+            <Button Grid.Row="3" Grid.Column="0">
+                <CheckBox></CheckBox>
+            </Button>
+            <Button Grid.Row="4" Grid.Column="0">
+                <CheckBox></CheckBox>
+            </Button>
+            <Button Grid.Row="5" Grid.Column="0">
+                <CheckBox></CheckBox>
+            </Button>
+            <Button Grid.Row="6" Grid.Column="0">
+                <CheckBox></CheckBox>
+            </Button>
+            <Button Grid.Row="7" Grid.Column="0">
+                <CheckBox></CheckBox>
+            </Button>
+            <Button Grid.Row="8" Grid.Column="0">
+                <CheckBox></CheckBox>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="1">
+                <Button IsEnabled="False">Student ID</Button>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="2">
+                <Button IsEnabled="False">FirstName</Button>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="3">
+                <Button IsEnabled="False">LastName</Button>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="4">
+                <Button IsEnabled="False">Class</Button>
+            </Button>
+            <Button Grid.Row="0" Grid.Column="5">
+                <Button IsEnabled="False">Email</Button>
+                
+            </Button>
+        </Grid>
+        <Border BorderThickness="0 0 0 1" BorderBrush="Black"/>
+    </StackPanel>
+</Window>
