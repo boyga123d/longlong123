@@ -32,11 +32,7 @@
 
         <StackPanel Orientation="Horizontal">
             <TextBox Height="20" Width="211" >Student ID , Name , Email...</TextBox>
-            <ComboBox Height="38" Width="105">
-                <ComboBoxItem IsSelected="True">None</ComboBoxItem>
-                <ComboBoxItem>18DTHQA1</ComboBoxItem>
-                <ComboBoxItem>18DTHQA2</ComboBoxItem>
-
+            <ComboBox Height="38" Width="105" ItemsSource="{Binding Path=ListClass}" SelectedItem="{Binding Path=Class}">
             </ComboBox>
 
             <Button Content= "Search" Height="40" Width="101"></Button>

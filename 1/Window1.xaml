@@ -34,19 +34,15 @@
             <TextBlock Grid.Row="6" Grid.Column="0" Margin="0,5,0,22" Grid.RowSpan="2"><Run Text="Gmail"/></TextBlock>
             <TextBlock Grid.Row="7" Grid.Column="0" Margin="0,5,0,-5"><Run Text="Class"/></TextBlock>
 
-            <TextBox Grid.Row="0" Grid.Column="1"/>
-            <TextBox Grid.Row="1" Grid.Column="1"/>
-            <TextBox Grid.Row="2" Grid.Column="1"/>
-            <DatePicker Grid.Row="3" Grid.Column="1"/>
-            <CheckBox Grid.Row="4" Grid.Column="1" Margin="66,5,-66,21" Grid.RowSpan="2" Content="Nữ"/>
-            <CheckBox Grid.Row="4" Grid.Column="1" Content="Nam" Margin="0,5,0,22" Grid.RowSpan="2"/>
-            <TextBox Grid.Row="5" Grid.Column="1"/>
-            <TextBox Grid.Row="6" Grid.Column="1"/>
-            <ComboBox Grid.Row="7" Grid.Column="1">
-                <ComboBoxItem IsSelected="True" Content="None"/>
-                <ComboBoxItem Content="18DTHQA1"/>
-                <ComboBoxItem Content="18DTHQA2"/>
-
+            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path =StudentId, ValidatesOnDataErrors=True}"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Path=FirstName}" />
+            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=LastName}" />
+            <DatePicker Grid.Row="3" Grid.Column="1" SelectedDate="{Binding Path=Birthday}"/>
+            <CheckBox Grid.Row="4" Grid.Column="1" Margin="66,5,-66,21" Grid.RowSpan="2" Content="Nữ" IsChecked="{Binding Path=Male}" />
+            <CheckBox Grid.Row="4" Grid.Column="1" Content="Nam" Margin="0,5,0,22" Grid.RowSpan="2" IsChecked="{Binding Path=Female}"/>
+            <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding Path=Address}"/>
+            <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding Path=Email}"/>
+            <ComboBox Grid.Row="7" Grid.Column="1"  Height="26" VerticalAlignment="Top" ItemsSource="{Binding Path=ListClass}" SelectedItem="{Binding Path=Class}" >
             </ComboBox>
         </Grid>
         <Grid ShowGridLines="False">

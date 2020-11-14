@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\WindowsProgrammingExcercises-main\\WindowsProgrammingExcercises-main\\05_ExReadDoc\\05_ExReadDoc\\05_ExReadDoc.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Documents\\GitHub\\longlong123\\05_ExReadDoc\\05_ExReadDoc\\05_ExReadDoc.csproj",
       "projectName": "05_ExReadDoc",
-      "projectPath": "C:\\Users\\DELL\\Desktop\\WindowsProgrammingExcercises-main\\WindowsProgrammingExcercises-main\\05_ExReadDoc\\05_ExReadDoc\\05_ExReadDoc.csproj",
+      "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\longlong123\\05_ExReadDoc\\05_ExReadDoc\\05_ExReadDoc.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\Desktop\\WindowsProgrammingExcercises-main\\WindowsProgrammingExcercises-main\\05_ExReadDoc\\05_ExReadDoc\\obj\\",
+      "outputPath": "C:\\Users\\DELL\\Documents\\GitHub\\longlong123\\05_ExReadDoc\\05_ExReadDoc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
