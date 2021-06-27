@@ -1,0 +1,13 @@
+{
+    "BOT_TOKEN": "ODMxMzMwNDMyNTY1OTAzNDAx.YHTqzA.86h3OmUTJYYI5vWk6qLzdXVpXHA",
+    "SERVER_URL": "51.79.240.19:30120",
+    "SERVER_LOGO": "http://www.google.com.vn/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fpegasus-mascot-pegasus-athletic-club-vector-logo-concept-isolated-dark-background-badge-emblem-t-shirt-printing-modern-image187895879&psig=AOvVaw202ZarktaJGRqZpLiB4hJs&ust=1624905617197000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCMD87aO7uPECFQAAAAAdAAAAABAJ",
+    "SERVER_NAME": "PEGASUS 2.0",
+    "PREFIX": "!",
+    "CHANNELS_ID":{
+        "SUGGESTIONS":"",
+        "MEMES":"",
+        "ANIMALS":""
+    }
+    
+}
